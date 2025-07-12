@@ -1,0 +1,29 @@
+# Windsurf Deploys Configuration (Beta)
+# This is an auto-generated file used to store your app deployment configuration. Do not modify.
+# The ID of the project (different from project name) on the provider's system. This is populated as a way to update existing deployments.
+project_id: 54c03c98-3bbf-4215-9cc6-417d32a9f52c
+# The framework of the web application (examples: nextjs, react, vue, etc.)
+framework: eleventy
+# The provider of the web application (examples: aws, google, azure, etc.)
+provider: github
+# The repository of the web application (examples: https://github.com/username/repository)
+repository: https://github.com/username/repository
+# The branch of the web application (examples: main, master, etc.)
+branch: main
+# The directory of the web application (examples: /path/to/your/app)
+directory: .
+# The domain of the web application (examples: https://yourapp.com)
+domain: https://yourapp.com
+# The port of the web application (examples: 80, 443, etc.)
+port: 80
+# The protocol of the web application (examples: http, https, etc.)
+protocol: https
+# The environment of the web application (examples: production, staging, etc.)
+environment: production
+# The region of the web application (examples: us-east-1, eu-west-1, etc.)
+region: us-east-1
+# The access key of the web application (examples: AKIAIOSFODNN7EXAMPLE)
+access_key: AKIAIOSFODNN7EXAMPLE
+# The secret key of the web application (examples: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY)
+secret_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+

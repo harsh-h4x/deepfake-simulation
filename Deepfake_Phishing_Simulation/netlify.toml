@@ -1,0 +1,4 @@
+# Netlify configuration for Deepfake Phishing Simulation demo
+[build]
+  publish = "."  # serve project root (prototype and demo folders)
+  command = ""  # no build needed for static site

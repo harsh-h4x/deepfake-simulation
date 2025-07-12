@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deepfake Phishing Attack Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Deepfake Phishing Attack Simulation</h1>
+    <p>This interactive demo shows how a realistic-sounding urgent request can be manufactured with AI-generated video and voice. Walk through the scenario, decide whether it feels suspicious, and learn simple verification steps.</p>
+
+    <video id="phishingVideo" controls>
+      <source src="../demo/video/ceo_video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <audio id="phishingAudio" controls>
+      <source src="../demo/audio/ceo_voice.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <button id="simulateAttackBtn">Simulate Attack</button>
+    <button id="resetBtn" style="margin-left:1rem;background-color:#6c757d;">Reset</button>
+
+    <div id="message" class="message" style="display:none;">
+      <p><strong>Alert:</strong> The above video and audio are deepfake simulations used to demonstrate phishing risks.</p>
+      <p>Always verify unexpected requests by calling back or using secure channels.</p>
+    </div>
+
+    <div id="verification" class="verification" style="display:none;">
+      <h2>Verification & Countermeasures</h2>
+      <ul>
+        <li>Call back the executive using a known phone number.</li>
+        <li>Check for digital watermarks or metadata in videos.</li>
+        <li>Use multi-factor authentication for sensitive actions.</li>
+        <li>Educate employees on social engineering tactics.</li>
+      </ul>
+    </div>
+
+    <div id="engage" class="engage" style="display:none;">
+      <h2>Quick Check</h2>
+      <form id="quizForm">
+        <p>Did this request seem suspicious?</p>
+        <label><input type="radio" name="suspicious" value="yes" required /> Yes</label>
+        <label style="margin-left:1rem;"><input type="radio" name="suspicious" value="no" required /> No</label>
+        <br/><br/>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="feedback" style="margin-top:0.5rem;"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
